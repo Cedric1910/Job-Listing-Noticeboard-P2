@@ -5,6 +5,18 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
+class Hash
+  def slice(*keep_keys)
+    h = {}
+    keep_keys.each { |key| h[key] = fetch(key) if has_key?(key) }
+    h
+  end unless Hash.method_defined?(:slice)
+  def except(*less_keys)
+    slice(*keys - less_keys)
+  end unless Hash.method_defined?(:except)
+end
+
 Vagrant.configure("2") do |config|
   # Online Vagrantfile documentation is at https://docs.vagrantup.com.
 
@@ -55,8 +67,8 @@ Vagrant.configure("2") do |config|
     # (will be of the form "us-east-1a"). The subnet_id for that
     # availability_zone needs to be included, too (will be of the form
     # "subnet-...").
-    ##aws.availability_zone = ""
-    ##aws.subnet_id = ""
+    aws.availability_zone = "us-east-1e"
+    aws.subnet_id = "subnet-e809e6d9"
 
     # You need to chose the AMI (i.e., hard disk image) to use. This
     # will be of the form "ami-...".
