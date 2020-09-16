@@ -79,11 +79,11 @@ Vagrant.configure("2") do |config|
     # You need to get the region correct, and the correct form of
     # configuration (probably amd64, hvm:ebs-ssd, hvm).
     #
-    ##aws.ami = ""
+    aws.ami = "ami-07a985bed28dfbc01"
 
     # If using Ubuntu, you probably also need to uncomment the line
     # below, so that Vagrant connects using username "ubuntu".
-    ##override.ssh.username = "ubuntu"
+    override.ssh.username = "ubuntu"
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as
