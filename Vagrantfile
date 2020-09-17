@@ -89,4 +89,22 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+  config.vm.define "webserver" do |webserver|
+    #The following options are about the current webserver VM.
+    webserver.vm.hostname = "webserver" #specifies the current webservers hostname.
+
+    webserver.vm.provision "shell", inline: <<-SHELL
+     apt-get update
+     apt-get install -y apache2 php libapache2-mod-php php-mysql
+     cp /vagrant/job-form.conf /etc/apache2/sites-available/
+
+     chmod 777 /vagrant
+     chmod 777 /vagrant/www
+     chmod 777 /vagrant/www/index.php
+
+     a2ensite job-form
+     a2dissite 000-default
+     service apache2 reload
+    SHELL
+  end
 end

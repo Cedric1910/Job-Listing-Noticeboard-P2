@@ -5,6 +5,97 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <style>
+      body{
+      background-color: rgb(47, 56, 110);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+
+      .header{
+      background-color: rgb(235, 235, 235);
+      border: 1px solid black;
+      text-align: center;
+      padding: 1.5rem;
+      width: 95%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      box-shadow: 0px 0px 11px 3px rgba(6, 5, 44, 0.75);
+      }
+
+      .title{
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(16, 16, 128);
+      }
+
+      .sub-title{
+      font-size: 25px;
+      }
+
+      .content{
+      margin-top: 1rem;
+      background-color: rgb(231, 231, 231);
+      border: 2px solid black;
+      padding: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 30rem;
+      align-items: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 11px 3px rgba(6, 5, 44, 0.75);}
+
+      .listing-form{
+      width: 20rem;
+      text-align: right;
+      list-style-type: none;
+      font-size: 18px;
+      }
+
+      .listing-form li{
+      margin-bottom: 5px;
+      }
+
+      .listing-form li:last-child{
+      text-align: center;
+      }
+
+      .button{
+      margin-top: 1rem;
+      width: 10rem;
+      padding: 5px;
+      font-size: 13px;
+      border-radius: 0.3rem;
+      border: 1px solid rgb(0, 0, 0);
+      cursor: pointer;
+      background-color: rgb(30, 30, 90);
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      .button:hover{
+      background-color: rgb(45, 45, 136);
+      }
+
+      .thankyou{
+      margin-top: 0.5rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 27rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: rgb(231, 231, 231);
+      box-shadow: 0px 0px 4px 2px rgb(38, 158, 14);
+      }
+   </style>
     <div class="header">
       <div class="title"> Job Listing Form </div>
       <div class="sub-title">Submit your job advertisments here to get
