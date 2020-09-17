@@ -28,9 +28,9 @@ Vagrant.configure("2") do |config|
     # parameters from environment variables (more secure than
     # committing security credentials to your Vagrantfile).
     #
-    aws.access_key_id = "ASIA523WU7DLPSQHQ4P6"
-    aws.secret_access_key = "OrerxK6vCpx6q2JtyzXKvj4MFN4PLd9jP7hQHdSm"
-    aws.session_token = "FwoGZXIvYXdzEOz//////////wEaDIuMoPkljLfZzLqvYCLLAZ6PzMMuIu5S21QVnrD6PO7vu33DGeVnidiersXRpjwc4OEHwXBNN/74VIvLTQqhGslHywDybLGFaoaz8iBkF/Qb2UH5138fN+x2zQdA7654DsTX5h4k1SBwcbaLFYjTnSgIt8SbOxw6ivCVW9cAY5C0h5kdMrK1SFHjLvuLoF3o8D4Bx9ywjHgl89MLkj7ZsS9TDd1khvyi+byuNliECb9OqK7nnNaHrfNl0nrwNutXTUh96WKrqlblbd8WaT0rEi+89EN+By/lRL4MKMvzhfsFMi1/xFbHXUVCmwlx9D+/5P2XdOBvMUntrPuW9lqtKRTQL1RciEOXsnkY4YzERyg="
+    ##aws.access_key_id = "ASIA523WU7DLAU567IB3"
+    ##aws.secret_access_key = "5QdBL/3p5qqZxW+UBmvSR3uL/tvSZbc6O6cg7yF"
+    ##aws.session_token = "FwoGZXIvYXdzEAMaDI6QLxjNOeQ16f1ZaSLLAWduP0skEJjMCi9nIgPqbDkC+qPaYlX+uyJw9IC9CJGMXnanx9WjDR4kDWDUodvdYX70Vab4SH06raHpXFyAYJj0NYrRtUb+o66/Gn9J20yVE4ceOTKgFwnlQX9kYpn9mxKE+X8zdf3wp4TiKr/RnO6lSTGPBj18juAQKBMCuIvAOh4tfgt+eqqRQHARquyH5UEIiYbSZl2LLMP5/cuUux/Mzs9uDku4O74ROY1S9x/4VQzejPPl66JNA3LpbxwcWqBDAaa/ZLDXREcgKIyFi/sFMi0fzh56aIa20r0ErHlNisym+O/AWl6MSFWgvvk68mjE9UDhSqASf3sDYwKQoKw="
 
     # The region for Amazon Educate is fixed.
     aws.region = "us-east-1"
@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
     aws.keypair_name = "assignment2"
     # The private_key_path is a file location in your macOS account
     # (e.g., ~/.ssh/something).
-    ##override.ssh.private_key_path = ""
+    override.ssh.private_key_path = "~/.ssh/assignment2.pem"
 
     # Choose your Amazon EC2 instance type (t2.micro is cheap).
     ##aws.instance_type = "t2.micro"
