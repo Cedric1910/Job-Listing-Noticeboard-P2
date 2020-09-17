@@ -27,11 +27,7 @@ Vagrant.configure("2") do |config|
     # We will gather the data for these three aws configuration
     # parameters from environment variables (more secure than
     # committing security credentials to your Vagrantfile).
-    #
-    ##aws.access_key_id = "ASIA523WU7DLAU567IB3"
-    ##aws.secret_access_key = "5QdBL/3p5qqZxW+UBmvSR3uL/tvSZbc6O6cg7yF"
-    ##aws.session_token = "FwoGZXIvYXdzEAMaDI6QLxjNOeQ16f1ZaSLLAWduP0skEJjMCi9nIgPqbDkC+qPaYlX+uyJw9IC9CJGMXnanx9WjDR4kDWDUodvdYX70Vab4SH06raHpXFyAYJj0NYrRtUb+o66/Gn9J20yVE4ceOTKgFwnlQX9kYpn9mxKE+X8zdf3wp4TiKr/RnO6lSTGPBj18juAQKBMCuIvAOh4tfgt+eqqRQHARquyH5UEIiYbSZl2LLMP5/cuUux/Mzs9uDku4O74ROY1S9x/4VQzejPPl66JNA3LpbxwcWqBDAaa/ZLDXREcgKIyFi/sFMi0fzh56aIa20r0ErHlNisym+O/AWl6MSFWgvvk68mjE9UDhSqASf3sDYwKQoKw="
-
+   
     # The region for Amazon Educate is fixed.
     aws.region = "us-east-1"
 
@@ -47,28 +43,28 @@ Vagrant.configure("2") do |config|
     # :aws configuration section.
 
     # The keypair_name parameter tells Amazon which public key to use.
-    aws.keypair_name = "assignment2"
+    aws.keypair_name = "cosc349"
     # The private_key_path is a file location in your macOS account
     # (e.g., ~/.ssh/something).
-    override.ssh.private_key_path = "~/.ssh/assignment2.pem"
+    override.ssh.private_key_path = "~/.ssh/cosc349.pem"
 
     # Choose your Amazon EC2 instance type (t2.micro is cheap).
-    ##aws.instance_type = "t2.micro"
+    aws.instance_type = "t2.micro"
 
     # You need to indicate the list of security groups your VM should
     # be in. Each security group will be of the form "sg-...", and
     # they should be comma-separated (if you use more than one) within
     # square brackets.
     #
-    aws.security_groups = ["sg-0c6d695da725a39d4"]
+    aws.security_groups = ["sg-0a1983d7cbb753e9d"]
 
     # For Vagrant to deploy to EC2 for Amazon Educate accounts, it
     # seems that a specific availability_zone needs to be selected
     # (will be of the form "us-east-1a"). The subnet_id for that
     # availability_zone needs to be included, too (will be of the form
     # "subnet-...").
-    aws.availability_zone = "us-east-1e"
-    aws.subnet_id = "subnet-e809e6d9"
+    aws.availability_zone = "us-east-1a"
+    aws.subnet_id = "subnet-ca0bd3ac"
 
     # You need to chose the AMI (i.e., hard disk image) to use. This
     # will be of the form "ami-...".
@@ -79,7 +75,7 @@ Vagrant.configure("2") do |config|
     # You need to get the region correct, and the correct form of
     # configuration (probably amd64, hvm:ebs-ssd, hvm).
     #
-    aws.ami = "ami-07a985bed28dfbc01"
+    aws.ami = "ami-0f82752aa17ff8f5d"
 
     # If using Ubuntu, you probably also need to uncomment the line
     # below, so that Vagrant connects using username "ubuntu".
