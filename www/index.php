@@ -143,7 +143,7 @@
       if(isset($_POST['submit'])){
         ini_set('display_errors',true);
         error_reporting(E_ALL);
-        $db_host = 'job-listing-noticeboard.cedymmk96tsp.us-east-1.rds.amazonaws.com';
+        $db_host = 'job-listing-db.cedymmk96tsp.us-east-1.rds.amazonaws.com';
         $db_user = 'dbuser';
         $db_passwd = 'joblisting20';
         $db_name = 'joblistingdb';
