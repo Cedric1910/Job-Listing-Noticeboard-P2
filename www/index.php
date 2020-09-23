@@ -136,8 +136,6 @@
  
     <div class="thankyou">
       Thank you for using our service!
-      <br>
-      Job Listing Noticeboard is located <a href="http://127.0.0.1:8081/index.php"> Here </a>
     </div>
     <?php
       if(isset($_POST['submit'])){

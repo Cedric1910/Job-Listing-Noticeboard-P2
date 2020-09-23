@@ -10,7 +10,7 @@
 
     <style> 
       body{
-    http://127.0.0.1:8081/index.php
+    background-color: rgb(47, 56, 110);
     display: flex;
     flex-direction: column;
     justify-content: center;
