@@ -7,6 +7,70 @@
   </head>
 
   <body>
+
+    <style> 
+      body{
+    http://127.0.0.1:8081/index.php
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    background-color: rgb(235, 235, 235);
+    border: 1px solid black;
+    text-align: center;
+    padding: 1.5rem;
+    width: 95%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 11px 3px rgba(6, 5, 44, 0.75);
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(16, 16, 128);
+}
+
+.sub-title{
+    font-size: 25px;
+}
+
+.content{
+    margin-top: 1rem;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid blue;
+    padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 11px 3px rgba(6, 5, 44, 0.75);}
+
+th {
+    text-align: left;
+ 
+}
+
+table, th, td {
+    font-size: 20px;
+    border: 2px solid grey;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+
+    </style>
     <div class="header"> 
       <div class= "title"> Current Job Listings </div>
       <div class ="sub-title"> This shows all the jobs currently available</div> 
