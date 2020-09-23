@@ -23,11 +23,11 @@
         <th> Email: </th>
       </tr>
       <?php
-      	$db_host = '192.168.2.13';
-        $db_user = 'dbuser';
-        $db_passwd = 'joblisting20';
-        $db_name = 'joblistingdb';
-         $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
+      	$db_host = 'job-listing-db.cedymmk96tsp.us-east-1.rds.amazonaws.com';
+        $db_user = 'admin';
+        $db_passwd = 'password';
+        $db_name = 'job_listing';
+        $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
          
          try{
         	$pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
