@@ -23,7 +23,7 @@
         <th> Email: </th>
       </tr>
       <?php
-      	$db_host = 'job-listing-db.cedymmk96tsp.us-east-1.rds.amazonaws.com';
+      	$db_host = 'job-listingdb.cedymmk96tsp.us-east-1.rds.amazonaws.com';
         $db_user = 'admin';
         $db_passwd = 'password';
         $db_name = 'job_listing';
