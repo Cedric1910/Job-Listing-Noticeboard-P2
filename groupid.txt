@@ -1,3 +1,0 @@
-sg-0c6d695da725a39d4
-
-Put this in the vagrant file under the aws.security_groups parameter 
