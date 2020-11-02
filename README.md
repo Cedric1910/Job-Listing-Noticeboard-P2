@@ -7,3 +7,5 @@ This application aims to give users a platform to post available job positions u
 Job Listing Form URL: http://ec2-18-215-34-18.compute-1.amazonaws.com
 
 Job Listing Noticeboard URL: http://ec2-34-201-47-13.compute-1.amazonaws.com
+
+(Due to Amazon AWS free-tier limitations these URL's will stop working after a certain date.) 
